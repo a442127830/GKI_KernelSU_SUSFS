@@ -317,7 +317,7 @@ jobs:
 
             # Create the tag in the repository
             git tag $NEW_TAG
-            git push origin $NEW_TAG
+            git push --tags
             
       # Download Artifacts for A12 (Only if A12 Build is successful or input is true or empty)
       - name: Download Artifacts
